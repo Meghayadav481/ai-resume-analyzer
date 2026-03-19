@@ -1,9 +1,5 @@
 import streamlit as st
 import PyPDF2
-import spacy
-
-# Load NLP model
-nlp = spacy.load("en_core_web_sm")
 
 # Skill list
 skills_list = [
@@ -29,7 +25,7 @@ def extract_skills(text):
 
 # UI
 st.title("📄 AI Resume Analyzer")
-st.write("Analyze your resume using AI and get smart suggestions 🚀")
+st.write("Analyze your resume and get smart suggestions 🚀")
 
 uploaded_file = st.file_uploader("Upload your Resume (PDF)", type=["pdf"])
 
